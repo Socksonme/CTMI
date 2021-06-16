@@ -9,5 +9,8 @@ Currently, the Mod accounts for Calamity's recipes and items for the Travelling 
 
 Changelog:
 
-0.1.0 
+1.0.0.1
+- Added GitHub repo - icon now shows up
+
+1.0.0 
 - Mod Released
