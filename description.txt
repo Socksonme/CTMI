@@ -1,0 +1,13 @@
+CTMI - short for Craftable Travelling Merchant Items. 
+All that this Mod does is it simply adds recipes for the difficult to obtain Travelling Merchant items which can be so infuriating to get.
+
+Feedback:
+If you have any ideas on how I could improve the recipes/any suggestions for Mods that I could make the Mod compatible with, if you can, please reply to the forum post, as I'd like to improve the mod in any way I can.
+
+Mod support:
+Currently, the Mod accounts for Calamity's recipes and items for the Travelling Merchant.
+
+Changelog:
+
+0.1.0 
+- Mod Released

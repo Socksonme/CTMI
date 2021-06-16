@@ -1,0 +1,5 @@
+displayName = CTMI
+author = Socksonme
+version = 1.0.0
+homepage = https://forums.terraria.org/index.php?threads/ctmi-craftable-travelling-merchant-items.106051/
+weakRefrences = CalamityMod
