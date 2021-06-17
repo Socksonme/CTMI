@@ -9,6 +9,9 @@ Currently, the Mod accounts for Calamity's recipes and items for the Travelling 
 
 Changelog:
 
+1.0.1
+- Added recipes for paintings and team blocks
+
 1.0.0.1
 - Added GitHub repo - icon now shows up
 
