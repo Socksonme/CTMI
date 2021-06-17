@@ -296,6 +296,70 @@ namespace CTMI {
 					recipe.AddTile(TileID.WorkBenches);
 					recipe.SetResult(ItemID.TeamBlockPinkPlatform);
 					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Silk, 6);
+					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.PaintingTheSeason);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Silk, 6);
+					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.PaintingSnowfellas);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Silk, 6);
+					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.PaintingCursedSaint);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Silk, 6);
+					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.PaintingColdSnap);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Silk, 6);
+					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.PaintingAcorns);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Silk, 6);
+					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.PaintingTheTruthIsUpThere);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Silk, 6);
+					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.PaintingMartiaLisa);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Silk, 6);
+					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.PaintingCastleMarsberg);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Silk, 6);
+					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddTile(TileID.WorkBenches);
+					// At least this one is not as bad as the others
+					recipe.SetResult(ItemID.MoonLordPainting);
+					recipe.AddRecipe();
 				}
 
 				recipe = new ModRecipe(this);
