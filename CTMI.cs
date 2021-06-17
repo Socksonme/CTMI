@@ -218,6 +218,84 @@ namespace CTMI {
 					recipe.AddTile(TileID.CrystalBall);
 					recipe.SetResult(ItemID.ArcaneRuneWall, 4);
 					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Obsidian);
+					recipe.AddTile(TileID.CrystalBall);
+					recipe.SetResult(ItemID.ArcaneRuneWall, 4);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Emerald);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.TeamBlockGreen, 100);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Ruby);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.TeamBlockRed, 100);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Sapphire);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.TeamBlockBlue, 100);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Topaz);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.TeamBlockYellow, 100);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Diamond);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.TeamBlockWhite, 100);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.Amethyst);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.TeamBlockPink, 100);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.TeamBlockWhite);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.TeamBlockWhitePlatform);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.TeamBlockGreen);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.TeamBlockGreenPlatform);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.TeamBlockYellow);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.TeamBlockYellowPlatform);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.TeamBlockRed);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.TeamBlockRedPlatform);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.TeamBlockBlue);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.TeamBlockBluePlatform);
+					recipe.AddRecipe();
+
+					recipe = new ModRecipe(this);
+					recipe.AddIngredient(ItemID.TeamBlockPink);
+					recipe.AddTile(TileID.WorkBenches);
+					recipe.SetResult(ItemID.TeamBlockPinkPlatform);
+					recipe.AddRecipe();
 				}
 
 				recipe = new ModRecipe(this);
