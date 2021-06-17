@@ -103,7 +103,7 @@ namespace CTMI {
 				recipe.AddIngredient(ItemID.WormTooth, 10);
 				recipe.AddIngredient(ItemID.IllegalGunParts);
 				recipe.AddTile(TileID.Anvils);
-				recipe.SetResult(ItemID.YellowCounterweight);
+				recipe.SetResult(ItemID.Gatligator);
 				recipe.AddRecipe();
 
 				if (CalamityMod != null && Config.CalamityRecipes) {
@@ -211,12 +211,6 @@ namespace CTMI {
 					recipe.AddIngredient(ItemID.Leather, 2);
 					recipe.AddTile(TileID.WorkBenches);
 					recipe.SetResult(ItemID.TigerSkin);
-					recipe.AddRecipe();
-
-					recipe = new ModRecipe(this);
-					recipe.AddIngredient(ItemID.Obsidian);
-					recipe.AddTile(TileID.CrystalBall);
-					recipe.SetResult(ItemID.ArcaneRuneWall, 4);
 					recipe.AddRecipe();
 
 					recipe = new ModRecipe(this);
