@@ -684,7 +684,8 @@ namespace CTMI {
 					ItemID.SpookyWood,
 					ItemID.BorealWood,
 					ItemID.DynastyWood,
-					CalamityMod.ItemType("AstralMonolith")
+					CalamityMod.ItemType("AstralMonolith"),
+					CalamityMod.ItemType("Acidwood")
 				});
 				RecipeGroup.RegisterGroup("CTMI:Wood", group);
 			}
