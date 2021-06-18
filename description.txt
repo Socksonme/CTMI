@@ -5,12 +5,12 @@ Feedback:
 If you have any ideas on how I could improve the recipes/any suggestions for Mods that I could make the Mod compatible with, if you can, please reply to the forum post, as I'd like to improve the mod in any way I can.
 
 Mod support:
-Currently, the Mod accounts for Calamity's recipes and items for the Travelling Merchant.
+Currently, the Mod accounts for Calamity and Thorium's recipes and items for the Travelling Merchant.
 
 Changelog:
 
 1.1.0
-- Added "Thorium support" by adding updating recipes to work with its Yew Wood
+- Added Thorium support by adding recipes to accommodate for its items
 
 1.0.1.2
 - Fixed an issue with the mod not working at all without Calamity
