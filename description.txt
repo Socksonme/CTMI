@@ -5,7 +5,7 @@ Feedback:
 If you have any ideas on how I could improve the recipes/any suggestions for Mods that I could make the Mod compatible with, if you can, please reply to the forum post, as I'd like to improve the mod in any way I can.
 
 Mod support:
-Currently, the Mod accounts for Calamity'S recipes and items for the Travelling Merchant.
+Currently, the Mod accounts for Calamity's recipes and items for the Travelling Merchant.
 
 Changelog:
 
