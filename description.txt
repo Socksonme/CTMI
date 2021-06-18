@@ -9,6 +9,12 @@ Currently, the Mod accounts for Calamity's recipes and items for the Travelling 
 
 Changelog:
 
+1.0.1.2
+- Fixed an issue with the mod not working at all without Calamity
+
+1.0.1.1
+- Fixed an issue where the Gatligator wouldn't show up as a recipe
+
 1.0.1
 - Added recipes for paintings and team blocks
 
