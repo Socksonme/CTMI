@@ -9,6 +9,9 @@ Currently, the Mod accounts for Calamity's recipes and items for the Travelling 
 
 Changelog:
 
+1.1.0
+- Added "Thorium support" by adding updating recipes to work with its Yew Wood
+
 1.0.1.2
 - Fixed an issue with the mod not working at all without Calamity
 
