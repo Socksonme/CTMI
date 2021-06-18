@@ -3,12 +3,10 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using Terraria.Localization;
 
-
 namespace CTMI {
 	public class CTMI : Mod {
 
 		Mod CalamityMod => ModLoader.GetMod("CalamityMod");
-		Mod ThoriumMod => ModLoader.GetMod("ThoriumMod");
 		ConfigClient Config => ModContent.GetInstance<ConfigClient>();
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(this);
@@ -294,63 +292,63 @@ namespace CTMI {
 
 					recipe = new ModRecipe(this);
 					recipe.AddIngredient(ItemID.Silk, 6);
-					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddRecipeGroup("Wood", 10);
 					recipe.AddTile(TileID.WorkBenches);
 					recipe.SetResult(ItemID.PaintingTheSeason);
 					recipe.AddRecipe();
 
 					recipe = new ModRecipe(this);
 					recipe.AddIngredient(ItemID.Silk, 6);
-					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddRecipeGroup("Wood", 10);
 					recipe.AddTile(TileID.WorkBenches);
 					recipe.SetResult(ItemID.PaintingSnowfellas);
 					recipe.AddRecipe();
 
 					recipe = new ModRecipe(this);
 					recipe.AddIngredient(ItemID.Silk, 6);
-					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddRecipeGroup("Wood", 10);
 					recipe.AddTile(TileID.WorkBenches);
 					recipe.SetResult(ItemID.PaintingCursedSaint);
 					recipe.AddRecipe();
 
 					recipe = new ModRecipe(this);
 					recipe.AddIngredient(ItemID.Silk, 6);
-					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddRecipeGroup("Wood", 10);
 					recipe.AddTile(TileID.WorkBenches);
 					recipe.SetResult(ItemID.PaintingColdSnap);
 					recipe.AddRecipe();
 
 					recipe = new ModRecipe(this);
 					recipe.AddIngredient(ItemID.Silk, 6);
-					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddRecipeGroup("Wood", 10);
 					recipe.AddTile(TileID.WorkBenches);
 					recipe.SetResult(ItemID.PaintingAcorns);
 					recipe.AddRecipe();
 
 					recipe = new ModRecipe(this);
 					recipe.AddIngredient(ItemID.Silk, 6);
-					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddRecipeGroup("Wood", 10);
 					recipe.AddTile(TileID.WorkBenches);
 					recipe.SetResult(ItemID.PaintingTheTruthIsUpThere);
 					recipe.AddRecipe();
 
 					recipe = new ModRecipe(this);
 					recipe.AddIngredient(ItemID.Silk, 6);
-					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddRecipeGroup("Wood", 10);
 					recipe.AddTile(TileID.WorkBenches);
 					recipe.SetResult(ItemID.PaintingMartiaLisa);
 					recipe.AddRecipe();
 
 					recipe = new ModRecipe(this);
 					recipe.AddIngredient(ItemID.Silk, 6);
-					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddRecipeGroup("Wood", 10);
 					recipe.AddTile(TileID.WorkBenches);
 					recipe.SetResult(ItemID.PaintingCastleMarsberg);
 					recipe.AddRecipe();
 
 					recipe = new ModRecipe(this);
 					recipe.AddIngredient(ItemID.Silk, 6);
-					recipe.AddRecipeGroup("CTMI:Wood", 10);
+					recipe.AddRecipeGroup("Wood", 10);
 					recipe.AddTile(TileID.WorkBenches);
 					// At least this one is not as bad as the others
 					recipe.SetResult(ItemID.MoonLordPainting);
@@ -502,7 +500,7 @@ namespace CTMI {
 
 			if (Config.ToolRecipes) {
 				recipe = new ModRecipe(this);
-				recipe.AddRecipeGroup("CTMI:Wood", 8);
+				recipe.AddRecipeGroup("Wood", 8);
 				recipe.AddIngredient(ItemID.GiantHarpyFeather);
 				recipe.AddIngredient(ItemID.Feather, 10);
 				recipe.AddTile(TileID.MythrilAnvil);
@@ -659,140 +657,26 @@ namespace CTMI {
 			RecipeGroup.RegisterGroup("CTMI:Counterweight", group);
 
 			// Use the DWood group the dynasty wood recipe
-			if (CalamityMod != null && Config.CalamityRecipes) {
-				if (ThoriumMod != null && Config.ThoriumRecipes) {
-					group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {
-						ItemID.Wood,
-						ItemID.RichMahogany,
-						ItemID.Ebonwood,
-						ItemID.Shadewood,
-						ItemID.Pearlwood,
-						ItemID.BorealWood,
-						ItemID.PalmWood,
-						ItemID.SpookyWood,
-						ItemID.BorealWood,
-						CalamityMod.ItemType("AstralMonolith"),
-						CalamityMod.ItemType("Acidwood"),
-						ThoriumMod.ItemType("YewWood")
-					});
-					RecipeGroup.RegisterGroup("CTMI:DWood", group);
 
-					group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {
-						ItemID.Wood,
-						ItemID.RichMahogany,
-						ItemID.Ebonwood,
-						ItemID.Shadewood,
-						ItemID.Pearlwood,
-						ItemID.BorealWood,
-						ItemID.PalmWood,
-						ItemID.SpookyWood,
-						ItemID.BorealWood,
-						ItemID.DynastyWood,
-						CalamityMod.ItemType("AstralMonolith"),
-						CalamityMod.ItemType("Acidwood"),
-						ThoriumMod.ItemType("YewWood")
-					});
-					RecipeGroup.RegisterGroup("CTMI:Wood", group);
-				}
-				else {
+			group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {});
 
-					group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {
-						ItemID.Wood,
-						ItemID.RichMahogany,
-						ItemID.Ebonwood,
-						ItemID.Shadewood,
-						ItemID.Pearlwood,
-						ItemID.BorealWood,
-						ItemID.PalmWood,
-						ItemID.SpookyWood,
-						ItemID.BorealWood,
-						CalamityMod.ItemType("AstralMonolith"),
-						CalamityMod.ItemType("Acidwood")
-					});
-					RecipeGroup.RegisterGroup("CTMI:DWood", group);
+			foreach (object id in RecipeGroup.recipeGroups[RecipeGroup.recipeGroupIDs["Wood"]].ValidItems) {
+				switch (id) {
+					case int i: {
+						// For mod IDs
+						group.ValidItems.Add((int)id);
+						break;
+                    }
+					case short s: {
+						// For vanilla IDs
+						group.ValidItems.Add((short)id);
+						break;
+                    }
+                }
+            }
+			group.ValidItems.Remove(ItemID.DynastyWood);
+			RecipeGroup.RegisterGroup("CTMI:DWood", group);
 
-					group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {
-						ItemID.Wood,
-						ItemID.RichMahogany,
-						ItemID.Ebonwood,
-						ItemID.Shadewood,
-						ItemID.Pearlwood,
-						ItemID.BorealWood,
-						ItemID.PalmWood,
-						ItemID.SpookyWood,
-						ItemID.BorealWood,
-						ItemID.DynastyWood,
-						CalamityMod.ItemType("AstralMonolith"),
-						CalamityMod.ItemType("Acidwood")
-					});
-					RecipeGroup.RegisterGroup("CTMI:Wood", group);
-				}
-				
-			}
-			
-			else {
-
-				if (ThoriumMod != null && Config.ThoriumRecipes) {
-					group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {
-						ItemID.Wood,
-						ItemID.RichMahogany,
-						ItemID.Ebonwood,
-						ItemID.Shadewood,
-						ItemID.Pearlwood,
-						ItemID.BorealWood,
-						ItemID.PalmWood,
-						ItemID.SpookyWood,
-						ItemID.BorealWood,
-						ThoriumMod.ItemType("YewWood")
-					});
-					RecipeGroup.RegisterGroup("CTMI:DWood", group);
-
-					group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {
-						ItemID.Wood,
-						ItemID.RichMahogany,
-						ItemID.Ebonwood,
-						ItemID.Shadewood,
-						ItemID.Pearlwood,
-						ItemID.BorealWood,
-						ItemID.PalmWood,
-						ItemID.SpookyWood,
-						ItemID.BorealWood,
-						ItemID.DynastyWood,
-						ThoriumMod.ItemType("YewWood")
-					});
-					RecipeGroup.RegisterGroup("CTMI:Wood", group);
-				}
-				else {
-					group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {
-						ItemID.Wood,
-						ItemID.RichMahogany,
-						ItemID.Ebonwood,
-						ItemID.Shadewood,
-						ItemID.Pearlwood,
-						ItemID.BorealWood,
-						ItemID.PalmWood,
-						ItemID.SpookyWood,
-						ItemID.BorealWood
-					});
-					RecipeGroup.RegisterGroup("CTMI:DWood", group);
-
-					group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {
-						ItemID.Wood,
-						ItemID.RichMahogany,
-						ItemID.Ebonwood,
-						ItemID.Shadewood,
-						ItemID.Pearlwood,
-						ItemID.BorealWood,
-						ItemID.PalmWood,
-						ItemID.SpookyWood,
-						ItemID.BorealWood,
-						ItemID.DynastyWood
-					});
-					RecipeGroup.RegisterGroup("CTMI:Wood", group);
-				}
-
-			}
-			
 		}
 		
 	}
