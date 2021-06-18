@@ -11,7 +11,7 @@ Changelog:
 
 
 
-1.1.0
+1.1.0.1
 **REVISION**
 So, apparently, I'm a dumbass and the mods already do what I've *mostly been doing, which is adding their materials to the recipe groups that are Vanilla (such as the wood recipe group), 
 however they do that on their own.
