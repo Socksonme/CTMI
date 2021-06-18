@@ -389,7 +389,7 @@ namespace CTMI {
 				recipe.AddRecipe();
 
 				// Time to say fuck readablity
-				if (Config.CalamityRecipes) {
+				if (Config.CalamityRecipes && CalamityMod != null) {
 					recipe = new ModRecipe(this);
 					recipe.AddIngredient(CalamityMod.GetItem("CragBullhead"));
 					recipe.AddTile(TileID.CookingPots);
