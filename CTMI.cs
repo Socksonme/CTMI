@@ -8,6 +8,7 @@ namespace CTMI {
 	public class CTMI : Mod {
 
 		Mod CalamityMod => ModLoader.GetMod("CalamityMod");
+		Mod ThoriumMod => ModLoader.GetMod("ThoriumMod");
 		ConfigClient Config => ModContent.GetInstance<ConfigClient>();
 		public override void AddRecipes() {
 			ModRecipe recipe = new ModRecipe(this);
@@ -659,6 +660,90 @@ namespace CTMI {
 
 			// Use the DWood group the dynasty wood recipe
 			if (CalamityMod != null && Config.CalamityRecipes) {
+				if (ThoriumMod != null && Config.ThoriumRecipes) {
+					group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {
+						ItemID.Wood,
+						ItemID.RichMahogany,
+						ItemID.Ebonwood,
+						ItemID.Shadewood,
+						ItemID.Pearlwood,
+						ItemID.BorealWood,
+						ItemID.PalmWood,
+						ItemID.SpookyWood,
+						ItemID.BorealWood,
+						CalamityMod.ItemType("AstralMonolith"),
+						CalamityMod.ItemType("Acidwood"),
+						ThoriumMod.ItemType("YewWood")
+					});
+					RecipeGroup.RegisterGroup("CTMI:DWood", group);
+
+					group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {
+						ItemID.Wood,
+						ItemID.RichMahogany,
+						ItemID.Ebonwood,
+						ItemID.Shadewood,
+						ItemID.Pearlwood,
+						ItemID.BorealWood,
+						ItemID.PalmWood,
+						ItemID.SpookyWood,
+						ItemID.BorealWood,
+						ItemID.DynastyWood,
+						CalamityMod.ItemType("AstralMonolith"),
+						CalamityMod.ItemType("Acidwood"),
+						ThoriumMod.ItemType("YewWood")
+					});
+					RecipeGroup.RegisterGroup("CTMI:Wood", group);
+				}
+				else {
+
+					group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {
+						ItemID.Wood,
+						ItemID.RichMahogany,
+						ItemID.Ebonwood,
+						ItemID.Shadewood,
+						ItemID.Pearlwood,
+						ItemID.BorealWood,
+						ItemID.PalmWood,
+						ItemID.SpookyWood,
+						ItemID.BorealWood,
+						CalamityMod.ItemType("AstralMonolith"),
+						CalamityMod.ItemType("Acidwood")
+					});
+					RecipeGroup.RegisterGroup("CTMI:DWood", group);
+
+					group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {
+						ItemID.Wood,
+						ItemID.RichMahogany,
+						ItemID.Ebonwood,
+						ItemID.Shadewood,
+						ItemID.Pearlwood,
+						ItemID.BorealWood,
+						ItemID.PalmWood,
+						ItemID.SpookyWood,
+						ItemID.BorealWood,
+						ItemID.DynastyWood,
+						CalamityMod.ItemType("AstralMonolith"),
+						CalamityMod.ItemType("Acidwood")
+					});
+					RecipeGroup.RegisterGroup("CTMI:Wood", group);
+				}
+				
+			}
+			
+			else {
+				group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {
+					ItemID.Wood,
+					ItemID.RichMahogany,
+					ItemID.Ebonwood,
+					ItemID.Shadewood,
+					ItemID.Pearlwood,
+					ItemID.BorealWood,
+					ItemID.PalmWood,
+					ItemID.SpookyWood,
+					ItemID.BorealWood
+				});
+				RecipeGroup.RegisterGroup("CTMI:DWood", group);
+
 				group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Wood", new int[] {
 					ItemID.Wood,
 					ItemID.RichMahogany,
@@ -669,40 +754,9 @@ namespace CTMI {
 					ItemID.PalmWood,
 					ItemID.SpookyWood,
 					ItemID.BorealWood,
-					CalamityMod.ItemType("AstralMonolith")
-				});
-				RecipeGroup.RegisterGroup("CTMI:DWood", group);
-
-				group = new RecipeGroup(() => "Wood", new int[] {
-					ItemID.Wood,
-					ItemID.RichMahogany,
-					ItemID.Ebonwood,
-					ItemID.Shadewood,
-					ItemID.Pearlwood,
-					ItemID.BorealWood,
-					ItemID.PalmWood,
-					ItemID.SpookyWood,
-					ItemID.BorealWood,
-					ItemID.DynastyWood,
-					CalamityMod.ItemType("AstralMonolith"),
-					CalamityMod.ItemType("Acidwood")
+					ItemID.DynastyWood
 				});
 				RecipeGroup.RegisterGroup("CTMI:Wood", group);
-			}
-			
-			else {
-				group = new RecipeGroup(() => "Wood", new int[] {
-					ItemID.Wood,
-					ItemID.RichMahogany,
-					ItemID.Ebonwood,
-					ItemID.Shadewood,
-					ItemID.Pearlwood,
-					ItemID.BorealWood,
-					ItemID.PalmWood,
-					ItemID.SpookyWood,
-					ItemID.BorealWood,
-				});
-				RecipeGroup.RegisterGroup("CTMI:DWood", group);
 
 			}
 			
