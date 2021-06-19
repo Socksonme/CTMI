@@ -74,12 +74,6 @@ namespace CTMI {
         [DefaultValue(true)]
         public bool CalamityRecipes { get; set; }
 
-        [BackgroundColor(99, 180, 209)]
-        [Label("Thorium Mod Specific Recipes")]
-        [Tooltip("Turns Thorium mod specific recipes on/off")]
-        [ReloadRequired]
-        [DefaultValue(true)]
-        public bool ThoriumRecipes { get; set; }
     }
 
 }
