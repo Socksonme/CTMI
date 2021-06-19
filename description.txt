@@ -9,7 +9,8 @@ Currently, the Mod accounts for Calamity's recipes and items for the Travelling 
 
 Changelog:
 
-
+1.1.0.2
+- Removed unnecessary config value
 
 1.1.0.1
 **REVISION**
