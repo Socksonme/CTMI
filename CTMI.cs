@@ -43,7 +43,6 @@ namespace CTMI {
 				recipe.AddRecipeGroup("IronBar", 10);
 				recipe.AddTile(TileID.Anvils);
 				recipe.SetResult(ItemID.ActuationAccessory);
-				// WHO THE FUCK THOUGHT THAT "ACTUATION ACCESSORY" WAS A GOOD ITEM ID NAME FOR THE PRESSERATOR????
 				recipe.AddRecipe();
 
 				recipe = new ModRecipe(this);
@@ -127,7 +126,6 @@ namespace CTMI {
 				}
 
 
-				// Moving the Confg.VanityRecipes if statement down to prevent an ide warning
 				if (Config.VanityRecipes) {
 					recipe = new ModRecipe(this);
 					recipe.AddRecipeGroup("CTMI:GoldBar", 6);
@@ -190,7 +188,6 @@ namespace CTMI {
 					recipe = new ModRecipe(this);
 					recipe.AddIngredient(ItemID.GoldBar);
 					recipe.AddTile(TileID.Anvils);
-					// Once again, wtf is this naming scheme?
 					recipe.SetResult(ItemID.SteampunkCup);
 					recipe.AddRecipe();
 
@@ -350,7 +347,6 @@ namespace CTMI {
 					recipe.AddIngredient(ItemID.Silk, 6);
 					recipe.AddRecipeGroup("Wood", 10);
 					recipe.AddTile(TileID.WorkBenches);
-					// At least this one is not as bad as the others
 					recipe.SetResult(ItemID.MoonLordPainting);
 					recipe.AddRecipe();
 				}
@@ -387,7 +383,6 @@ namespace CTMI {
 				recipe.SetResult(ItemID.Sake);
 				recipe.AddRecipe();
 
-				// Time to say fuck readablity
 				if (Config.CalamityRecipes && CalamityMod != null) {
 					recipe = new ModRecipe(this);
 					recipe.AddIngredient(CalamityMod.GetItem("CragBullhead"));
